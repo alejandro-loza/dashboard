@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
-
-
-
 var Parent = React.createClass({
   getInitialState: function(){
     return {sidebarOpen: false};
@@ -16,6 +13,7 @@ var Parent = React.createClass({
   render: function() {
     return (
       <div>
+		<App />
         <Header onClick={this.handleViewSidebar} />
         <SideBar isOpen={this.state.sidebarOpen} />
         <Content isOpen={this.state.sidebarOpen} />
@@ -39,9 +37,9 @@ var SideBar = React.createClass({
     return (
       <div className={sidebarClass}>
       	<div>I slide into view</div>
-				<div>Me too!</div>
-      	<div>Meee Threeeee!</div>        
-    	</div>
+		<div>Me too!</div>
+      	<div>Meee Threeeee!</div>
+	</div>
     );
   }
 });
