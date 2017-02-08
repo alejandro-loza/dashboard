@@ -13,7 +13,6 @@ var Parent = React.createClass({
   render: function() {
     return (
       <div>
-		<App />
         <Header onClick={this.handleViewSidebar} />
         <SideBar isOpen={this.state.sidebarOpen} />
         <Content isOpen={this.state.sidebarOpen} />
