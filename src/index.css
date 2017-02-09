@@ -31,7 +31,7 @@ header {
   right: 0;
   height: 100%;
   transition: left .3s ease-in-out;
-  background-color: lightgray;
+  background-color: green;
 }
 .sidebar.open {
     left: 0;
